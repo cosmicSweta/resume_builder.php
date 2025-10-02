@@ -3,14 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <title>Your Resume</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:wght@600;700&display=swap" rel="stylesheet">
     <style>
         body {
-            font-family: 'Helvetica', 'Arial', sans-serif;
-            background-color: #f0f2f5;
+            font-family: 'Lato', 'Helvetica', sans-serif;
+            background-color: #e6f0f7;
             margin: 0;
             padding: 0;
             color: #333;
+        }
+        h1, h2, h3 {
+            font-family: 'Montserrat', sans-serif;
         }
         .resume-container {
             max-width: 900px;
@@ -23,16 +28,17 @@
             text-transform: uppercase;
             font-size: 1.1em;
             letter-spacing: 1px;
-            color: #2c3e50;
+            color: #003366;
             border-bottom: 2px solid #2c3e50;
             padding-bottom: 5px;
             margin-top: 25px;
         }
         p { line-height: 1.6; white-space: pre-wrap; }
-        a { text-decoration: none; color: #3498db; }
+        a { text-decoration: none; color: #004488; }
 
         .left-column {
-            background-color: #e8eaf6;
+            background-color: #003366;
+            color: #ffffff;
             width: 35%;
             padding: 30px;
             box-sizing: border-box;
@@ -42,18 +48,19 @@
             padding: 30px;
             box-sizing: border-box;
         }
-        .left-column h2 { border-bottom-color: #aeb4d3; }
+        .left-column h2 { border-bottom-color: #ffffff; }
 
         .header {
             text-align: center;
             border-bottom: 1px solid #ddd;
+            border-bottom-color: #4CAF50;
             padding-bottom: 20px;
             margin-bottom: 20px;
         }
-        .header h1 { margin: 0; font-size: 2.5em; color: #2c3e50; }
+        .header h1 { margin: 0; font-size: 2.5em; color: #003366; }
         .header .job-title { margin: 5px 0; font-size: 1.2em; color: #555; font-weight: bold; }
         .contact-info { display: flex; justify-content: center; gap: 20px; margin-top: 15px; flex-wrap: wrap; font-size: 0.9em; }
-        .contact-info i { margin-right: 5px; color: #3498db; }
+        .contact-info i { margin-right: 5px; color: #004488; }
 
         .section-title { display: flex; align-items: center; gap: 10px; }
         .navigation { text-align: center; padding: 20px; background-color: #fff; }

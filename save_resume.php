@@ -15,15 +15,18 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if (empty($input['full_name'])) {
         $errors['full_name'] = "Full name is required.";
     }
-    if (empty($input['email'])) {
-        $errors['email'] = "Email is required.";
+    
+    if (empty($input['email'])) { $errors['email'] = 'Email is required.';
+    } elseif (!filter_var($input['email'], FILTER_VALIDATE_EMAIL)) {
+        $errors['email'] = "Please enter a valid email address.";
     }
+
     if (empty($input['summary'])) {
         $errors['summary'] = "Profile summary is required.";
     }
 
-    if (!empty($input['email']) && !filter_var($input['email'], FILTER_VALIDATE_EMAIL)) {
-        $errors['email'] = "Please enter a valid email address.";
+    if (empty($input['marital_status'])) {
+        $errors['marital_status'] = "Please select a marital status.";
     }
 
     if (!empty($errors)) {
@@ -45,8 +48,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $languages = $input['languages'];
     $gender = $input['gender'];
     $dob = $input['dob'];
+    $marital_status = $input['marital_status'];
     if(isset($input['$marital_status']) && $input['marital_status'] == 'Married') {
-    $guardian_name = $input['guardian_name_husband'] ?? '';
+        $guardian_name = $input['guardian_name_husband'] ?? '';
     } else { 
         $guardian_name = $input['guardian_name_father'] ?? ''; }
     $city = $input['city'];

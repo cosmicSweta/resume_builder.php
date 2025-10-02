@@ -5,65 +5,21 @@
     <title>Your Resume</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <style>
-        body {
-            font-family: 'Georgia', serif;
-            background-color: #f9f9f9;
-            margin: 0;
-            padding: 0;
-            color: #444;
-        }
-        .resume-container {
-            max-width: 800px;
-            margin: 30px auto;
-            background-color: #fff;
-            padding: 40px;
-            border-top: 5px solid #333;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-        }
-        .navigation {
-            text-align: center;
-            padding: 20px;
-            background-color: #fff;
-        }
-        .header {
-            text-align: center;
-            margin-bottom: 30px;
-            padding-bottom: 20px;
-            border-bottom: 1px solid #eee;
-        }
-        .header h1 {
-            margin: 0;
-            font-size: 3em;
-        }
-        .header p {
-            margin: 5px 0;
-            color: #777;
-        }
-        .section {
-            margin-bottom: 25px;
-        }
-        .section h2 {
-            font-size: 1.4em;
-            color: #333;
-            border-bottom: 2px solid #eee;
-            padding-bottom: 8px;
-            margin-bottom: 15px;
-        }
-        .section p {
-            white-space: pre-wrap;
-            line-height: 1.7;
-        }
-        .personal-info-table {
-            width: 100%;
-        }
-        .personal-info-table td {
-            padding: 4px 0;
-        }
-        .personal-info-table strong {
-            width: 140px;
-            display: inline-block;
-        }
-    </style>
+    body { font-family: 'Georgia', serif; background-color: #f4f7f9; margin: 0; padding: 0; color: #444; }
+    .resume-container { max-width: 800px; margin: 30px auto; background-color: #fff; 
+        padding: 40px; border-top: 5px solid #0d2c4b; box-shadow: 0 4px 15px rgba(0,0,0,0.1); }
+    .navigation { text-align: center; padding: 20px; background-color: #fff; }
+    .header { text-align: center; margin-bottom: 30px; padding-bottom: 20px; border-bottom: 1px solid #eee; }
+    .header h1 { margin: 0; font-size: 3em; color: #0d2c4b; }
+    .header p { margin: 5px 0; color: #777; }
+    .section { margin-bottom: 25px; }
+    .section h2 { font-size: 1.4em; color: #0d2c4b; border-bottom: 2px solid #eee; padding-bottom: 8px; margin-bottom: 15px; }
+    .section p { white-space: pre-wrap; line-height: 1.7; }
+    .personal-info-table { width: 100%; }
+    .personal-info-table td { padding: 4px 0; }
+    .personal-info-table strong { width: 140px; display: inline-block; }
+</style>
+
 </head>
 <body>
     <div class="navigation">
